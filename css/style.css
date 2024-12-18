@@ -8,7 +8,127 @@ Light gray    #d3d4d6
 Off-white     #f6f6f6
 */
 
+/* GLOBAL STYLES 
+-----------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* set default to 10px */
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html, body {
+  height: 100%;
+}
 
 body{
-  background: paleturquoise;
+  background: #d3d4d6;
+  margin: 0;
+  font-family: "Ubuntu", serif;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+h1, h2, h3 {
+  font-family: "Solitreo", serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1 {
+  font-size: 7rem;
+  line-height: 0.85;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+/* Link Styles
+-----------------------------*/
+a {
+  color: #3c8453;
+}
+a:hover {
+  color: #bcaa96;
+  text-decoration: none;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 900px;
+}
+
+/* HOME
+-----------------------------*/
+.home {
+  background: url(../images/basilica.png) no-repeat center;
+  background-size: cover; 
+  display: flex;
+  flex-direction: column;
+}
+.home .content-wrapper{
+  flex: 1 0 auto;
+}
+.content-bg{
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+}
+
+.no-home header::before{
+  background: url(../images/basilica.png) center;
+  background-size: cover;
+  content: " ";
+  display: block;
+  height: 375px;
+}
+/* RESUME
+-----------------------------*/
+.edu-item{
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  column-gap: 20px;
+}
+
+/* RESEARCH
+-----------------------------*/
+
+/* TEACHING
+-----------------------------*/
+
+/* USK
+-----------------------------*/
+
+/* FOOTER
+-----------------------------*/
+footer {
+  background: #222;
+  color: #d3d4d6;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.icons{
+  list-style-type: none;
+  padding: 0;
+}
+.icons li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.icons img {
+  width: 32px;
+}
+
+.icons img:hover{
+  opacity: 0.5;
 }
